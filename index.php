@@ -24,7 +24,7 @@ class Movie
     // Declaring instance variables regarding movie
     public string $movie_title;
     public int $release_year;
-    public string $movie_genre;
+    public array $movie_genre;
     public string $movie_director;
     public string $movie_rating;
     public array $movie_cast;
@@ -36,7 +36,7 @@ class Movie
     public function __construct(
         string $title,
         int $year,
-        string $genre,
+        array $genre,
         string $director,
         string $rating,
         array $cast,
@@ -70,7 +70,7 @@ class Movie
 $classicMovie = new Movie(
     'The Godfather',
     1972,
-    'Crime',
+    ['Crime'],
     'Francis Ford Coppola',
     'R',
     ['Marlon Brando', 'Al Pacino', 'James Caan', 'Robert Duvall'],
@@ -79,10 +79,12 @@ $classicMovie = new Movie(
     'Paramount Pictures'
 );
 
+var_dump($classicMovie);
+
 $modernMovie = new Movie(
     'The Dark Knight',
     2008,
-    'Action',
+    ['Action', 'Crime', 'Drama'],
     'Christopher Nolan',
     'PG-13',
     ['Christian Bale', 'Heath Ledger', 'Aaron Eckhart', 'Michael Caine'],
@@ -90,5 +92,7 @@ $modernMovie = new Movie(
     'Warner Bros. Pictures',
     'Warner Bros. Pictures'
 );
+
+var_dump($modernMovie);
 
 ?>

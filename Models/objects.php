@@ -12,8 +12,6 @@ $classicMovie = new Movie(
     'Paramount Pictures'
 );
 
-var_dump($classicMovie);
-
 $modernMovie = new Movie(
     'The Dark Knight',
     2008,
@@ -25,7 +23,5 @@ $modernMovie = new Movie(
     'Warner Bros. Pictures',
     'Warner Bros. Pictures'
 );
-
-var_dump($modernMovie);
 
 ?>

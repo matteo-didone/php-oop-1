@@ -197,3 +197,5 @@ $modernMovie = new Movie(
 );
 
 var_dump($modernMovie);
+
+?>
